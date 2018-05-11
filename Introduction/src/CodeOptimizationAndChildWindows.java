@@ -13,9 +13,7 @@ public class CodeOptimizationAndChildWindows {
 		System.setProperty("webdriver.chrome.driver", "E:\\Project\\selenium\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.qaclickacademy.com/practice.php");
-		WebElement footer = driver.findElement(By.id("gf-BIG")); // Limiting
-																	// Webdriver
-																	// scope
+		WebElement footer = driver.findElement(By.id("gf-BIG")); // Limiting Webdriver scope
 		System.out.println(footer.findElements(By.tagName("a")).size());
 		WebElement firstFooterCol = footer.findElement(By.xpath("//table/tbody/tr/td[1]/ul"));
 		System.out.println(firstFooterCol.findElements(By.tagName("a")).size());
